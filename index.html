@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Alphonso L Burt</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="stage">
+      <h1>Stage 0 Notes</h1>
+    </div>  
+    <div class="note-section">
+      <div class="notes">
+        <h2>How the Web Works</h2>
+          <p>The web is a bunch of computers that communicate with each other. When a person goes to a web page like <a href="http://www.google.com"> <img src="https://lh3.ggpht.com/Wx1OdscqyJkXh3vYLx6ZTxngP542hK_P2Mew1MvItbCs-GF4a0lyBfFSOfebDt9CX4Fv-omaDshdYX_obLI9=s90#w=130&h=60" alt="www.google.com"></a> 
+          their computer sends a HTTP Request to a server. The server finds the appropriate HTML document and sends it back to the user's computer where a web browser interprets the page and displays it on the user's screen.
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">This video</a> does a good job of explaining.</p>
+      </div>
+      <div class="notes">
+        <h2>HTML</h2>
+          <p>HTML stands for <b>Hypertext Markup Language</b>. 
+          HTML documents form the majority of the content on the web. 
+          HTML documents contain text content which describes <strong>"what you see"</strong> and markup which describes <strong><em>"how it looks"</em></strong>.
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340">This video</a> gives a good overview.</p>
+      </div> 
+      <div class="notes">
+        <h2>Tags and Elements</h2>
+          HTML documents are made of HTML <b>elements</b>.
+          When writing HTML, we tell browsers the type of each element by using HTML <em><b>tags</b></em>.<br>
+      </div>
+      <div class="notes">
+        <h2>Computers are Stupid</h2>
+          <p>Computers are stupid because they interpret instructions literally. This makes them very unforgiving since a small mistake by a programmer can cause huge problems in a program.</p>
+      </div>  
+      <div class="notes">    
+        <h2>Inline vs Block Elements </h2>
+          <p>HTML elements are either <b>inline</b> or <b>block</b>. Block elements form an "invisible box" around the content inside of them.</p>
+      </div>
+    </div>  
+    <div class="stage">
+      <h1>Stage 1 Notes</h1>
+    </div> 
+    <div class="note-section">
+      <h2>Stage 1: Work Session 1<br>Creating a Structured Document with HTML</h2>
+      <div class="notes">
+        <h2>Developer Tools (in the Browser)</h2>
+          <p>HTML elements are either inline or block. Block elements form an "invisible box" around the content inside of them.</p>
+      </div>
+    <div class="notes">
+      <h2>The "tree-like structure" of HTML </h2>
+        <p>The <b>"tree-like structure"</b> comes from the fact that HTML elements can have other elements inside of them. You can draw this relationship like a family tree. My mother had multiple children. So did her mother, and so on...<br> 
+        In a browser, this structure shows up as a series of nested boxes. There are boxes inside of boxes inside of boxes, and so on...</p> 
+      </div>
+      <div class="notes">
+        <h2>The relationship between indented HTML and boxes</h2>
+          <p>When you read an HTML document as text, you see a wave of changing indentations going up and down the left side of the document. The more indented an element is, the more deeply nested it's corresponding "box" is.</p>
+      </div>
+      <h2>Stage 1: Work Session 2<br>Adding CSS Style to HTML Structure</h2>
+      <div class="notes">
+        <h2>Page Structure Overview</h2>
+           <p>HTML controls the "structure" of a     web page.<br>
+             CSS controls the "style" of a page (how it looks).</p>
+      </div>
+      <div class="notes">
+        <h2>What is CSS</h2>
+          <p>CSS stands for "Cascading Style Sheets. CSS defines how HTML elements are to be displayed.  Inheritance is a key feature in CSS, it relies on the ancestor-descendant relationship to operate. Inheritance is the mechanism by which properties are applied not only to a specified element, but also to its descendants.</p>
+      </div>
+      <div class="notes">
+      <h2>How do I include CSS Styling in my web page</h2>
+        <p>CSS can be contained within an html file, by writing the css in the <em>head</em> of the html file. This method is good for very small projects.<br><br> To do this: <br>1. At the top of your HTML document, add a <em>head</em> element.<br>
+        2. Inside the <em>head</em> element, add a <em>style</em> element.<br> 3. Write your CSS in the <em>style</em> element and then put the HTML for the rest of your page below.</p>
+        <p>Or you can Link your HTML to a separate CSS file. his adds another step, but it lets you stay more organized when working on larger projects.<br><br> To do this: 1. Write all of your structural HTML in one html file.<br>
+          2. In a separate css file put all of your css code.<br>
+          3. Add a <em>head</em> element to the top of the HTML.<br>
+          4. Add a <em>link</em> tag inside the <em>head</em> element.<br>
+          5. Add the following attributes to the html in the <em>head</em> element:</p>  <pre>&lt;link&gt;: * rel="stylesheet" * type="text/css" * href="main.css"</pre>
+
+      </div>
+      <div class="notes">
+        <h2>CSS Selectors</h2>
+        <p>Selectors are what allows you to       target specific HTML elements and       apply style to them. <br>
+          Types of selectors include(<a href="https://css-tricks.com/how-css-selectors-work/">find examples here</a>):<br>
+          Class Selectors<br>
+          Tag selectors <br>
+          Positional<br>
+          Attribute<br>
+          Pseudo<br>
+      </div>
+      <div class="notes">
+        <h2>Box Sizing and Positioning</h2>
+          <h3>Box Sizing</h3>
+            <p>HTML elements are boxes and each box has 4 components.
+            There are two techniques you can use to help deal with sizing issues.<br>
+            1. Set sizes in terms of percents rather than pixels.<br>
+            2. Set the box-sizing attribute to border-box for every element.</p> 
+            <p>Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.</p>
+          <h3>Box Positioning</h3>
+            <p>Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.<br>
+            Adding the rule display: flex; to the appropriate CSS will override this behavior and let divs appear next to each other.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
